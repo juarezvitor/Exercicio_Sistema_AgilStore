@@ -78,12 +78,3 @@ git clone https://github.com/juarezvitor/Exercicio_Sistema_AgilStore.git
 
 4. Rode o sistema:
 ```
-
-agilstore/
-│
-├── index.js # Arquivo principal com menu de opções
-├── services/
-│ ├── productService.js # Funções CRUD de produtos
-│ └── fileService.js # Funções de leitura e escrita em JSON
-├── products.json # Arquivo de persistência
-└── README.md # Documentação do projeto
