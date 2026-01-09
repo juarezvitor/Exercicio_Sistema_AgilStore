@@ -52,6 +52,34 @@ O sistema oferece as seguintes operações:
    - Garantia de que os dados não se perdem ao fechar o sistema
 
 ---
+## 💡 Design da Solução e Decisões Tomadas
+
+1. **Modularidade do Código**  
+   - Separei as funcionalidades em arquivos: `productService.js` (CRUD) e `fileService.js` (persistência).  
+   - Isso facilita manutenção, testes e futuras melhorias, evitando arquivos grandes e confusos.
+
+2. **Persistência via JSON**  
+   - Usei `fs.readFileSync` e `fs.writeFileSync` para ler e salvar produtos.  
+   - A decisão de usar JSON veio da simplicidade: é legível, fácil de manter e não exige banco de dados externo.
+
+3. **Referência de Objetos**  
+   - Ao atualizar produtos, usei a referência do objeto dentro do array para modificar diretamente os campos, evitando a necessidade de recriar o array.
+
+4. **Interação via Terminal**  
+   - readline-sync permite interações simples e intuitivas, sem a complexidade de interfaces gráficas.  
+   - Mantive o menu claro, com opções numeradas e mensagens de feedback para o usuário.
+
+5. **Validações Básicas**  
+   - Checagem de existência de IDs antes de atualizar ou excluir.  
+   - Confirmação de exclusão para prevenir perda acidental de dados.
+
+6. **Filtros e Ordenações**  
+   - Listagem permite filtragem por categoria e ordenação por nome, quantidade ou preço.  
+   - Isso torna o sistema mais útil para cenários reais de estoque.
+
+7. **Segurança contra JSON inválido**  
+   - Se `products.json` estiver vazio ou corrompido, o sistema inicia com array vazio, evitando erros de execução.
+---
 
 ## 💻 Instalação e Execução
 
@@ -78,3 +106,4 @@ git clone https://github.com/juarezvitor/Exercicio_Sistema_AgilStore.git
 
 4. Rode o sistema:
 ```
+
