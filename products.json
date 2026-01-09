@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "nome": "Mesa",
+    "catergoria": "Domestico",
+    "preco": 899,
+    "quantidade": 5
+  }
+]
