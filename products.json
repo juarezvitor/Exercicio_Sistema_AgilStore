@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "nome": "Mesa",
-    "catergoria": "Domestico",
-    "preco": 899,
-    "quantidade": 5
+    "nome": "Bateria",
+    "categoria": "Automotiva",
+    "preco": 599,
+    "quantidade": 10
   }
 ]

@@ -18,6 +18,7 @@ function LoadProdutos() {
     }
 }
 
+
 function SalvarProdutos(produtos) {
     try {
         fs.writeFileSync(path, JSON.stringify(produtos, null, 2));

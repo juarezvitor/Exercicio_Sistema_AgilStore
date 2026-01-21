@@ -120,10 +120,3 @@ function buscarProduto(produtos) {
 
 
 // Exportando as funções para serem usadas em outros módulos
-module.exports = {
-    addProduto,
-    listarProdutos,
-    atualizarProduto,
-    removerProduto,
-    buscarProduto
-};
